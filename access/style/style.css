@@ -202,6 +202,12 @@ a {
       position: relative;
 }
 
+.header-right .main-img {
+      width: 576px;
+      height: 631px;
+      object-fit: cover;
+}
+
 .header .summary,
 .header .schedules,
 .header .student {
