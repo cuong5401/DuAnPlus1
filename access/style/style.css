@@ -1,0 +1,589 @@
+html {
+      font-size: 62.5%;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      box-sizing: border-box;
+      line-height: normal;
+}
+
+html,
+body {
+      scroll-behavior: smooth;
+}
+
+a {
+      text-decoration: none;
+}
+
+/* các class chung */
+
+
+.content {
+      width: 117rem;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.btn {
+      display: inline-block;
+      padding: 20px 40px;
+      color: #FFF;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: normal;
+      border-radius: 14px;
+      background: #1EBFC1;
+      border: 1px solid #1EBFC1;
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+}
+
+.btn:hover {
+      background: #FFF;
+      color: #1EBFC1;
+}
+
+
+.sub-deco {
+      color: #767E7E;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: normal;
+}
+
+.sub-title {
+      margin: 18px 0;
+      color: #0D1111;
+      font-size: 4.2rem;
+      font-weight: 700;
+      line-height: normal;
+}
+
+.sub-desc {
+      color: #767E7E;
+      font-size: 1.8rem;
+      line-height: normal;
+}
+
+.items {
+      display: flex;
+      justify-content: space-between;
+}
+
+#header,
+#about {
+      scroll-margin-top: 150px;
+}
+
+/************* header ***************/
+.nav-top {
+      height: 30px;
+}
+
+.nav {
+      position: sticky;
+      top: 0;
+      padding: 22px 0;
+      background-color: #FFF;
+      z-index: 1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav .content,
+.nav_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.nav_link {
+      padding: 12px 20px;
+      color: #2F3A3B;
+      font-size: 1.6rem;
+}
+
+.nav_link:hover {
+      color: #2F3A3B;
+      font-weight: 600;
+}
+
+.nav .signin_btn {
+      display: inline-block;
+      color: #494949;
+      font-size: 1.6rem;
+      padding: 12px 24px;
+}
+
+.nav .signin_btn:hover {
+      color: #1EBFC1;
+      cursor: pointer;
+}
+
+.nav .signup_btn {
+      display: inline-block;
+      padding: 12px 24px;
+      color: #1EBFC1;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1px solid #1EBFC1;
+      cursor: pointer;
+
+}
+
+.nav .signup_btn:hover {
+      color: #FFF;
+      background-color: #1EBFC1;
+}
+
+
+/******************** header *****************/
+.header .content {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 28px;
+      padding-bottom: 79px;
+}
+
+.header-left {
+      margin-top: auto;
+      margin-bottom: auto;
+}
+
+.header .deco {
+      color: #767E7E;
+      margin-bottom: 18px;
+}
+
+.header .title {
+      color: #0D1111;
+      font-size: 6.2rem;
+      font-weight: 700;
+      line-height: 1.16;
+      margin-bottom: 46px;
+}
+
+.header .desc {
+      color: #9DA6A5;
+      font-size: 1.8rem;
+      line-height: 1.77;
+      margin-bottom: 52px;
+}
+
+.header .cta {
+      display: flex;
+      gap: 50px;
+}
+
+.header .watch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #FFF;
+      box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+}
+
+.header .watch:hover {
+      background: #EEE;
+
+}
+
+.header-right {
+      background-color: #e0f7f6;
+      position: relative;
+}
+
+.header .summary,
+.header .schedules,
+.header .student {
+      padding: 16px 25px;
+      position: absolute;
+      color: #0D1111;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: normal;
+      border-radius: 18px;
+      background: #FEFEFD;
+      box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header .summary {
+      top: 150px;
+      left: 0;
+      transform: translateX(-30%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+}
+
+
+.header .summary .join_icon {
+      position: relative;
+}
+
+.header .summary .icon {
+      position: absolute;
+      bottom: 8px;
+      left: 4px;
+}
+
+.header .summary .info {
+      width: 55px;
+}
+
+.header .schedules {
+      left: 0;
+      bottom: 46px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+
+}
+
+.header .student {
+      padding: 16px 39px;
+      right: 45px;
+      bottom: 41px;
+}
+
+.header .avatar-list {
+      display: flex;
+      margin-top: 8px;
+}
+
+.header .avatar+.avatar {
+      margin-left: -6px;
+}
+
+.header .avatar.num {
+      display: flex;
+      width: 33px;
+      height: 33px;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      background-color: #1EBFC1;
+      border-radius: 50%;
+}
+
+/******************** features *****************/
+.features .content {
+      padding: 130px 0 0 0;
+}
+
+.features .sub-title {
+      width: 577px;
+}
+
+.features .sub-desc {
+      width: 590px;
+      margin-bottom: 80px;
+}
+
+.features .items .mini-title {
+      margin: 26px 0 16px;
+      color: #0D1111;
+      font-size: 2rem;
+      font-weight: 600;
+}
+
+.features .items .minidesc {
+      width: 223px;
+      color: #9DA6A5;
+      font-size: 1.6rem;
+      line-height: 1.68;
+}
+
+/******************** features *****************/
+
+.courses .content {
+      padding: 130px 0 0 0;
+      position: relative;
+}
+
+.courses .sub-desc {
+      width: 525px;
+      margin-bottom: 80px;
+}
+
+.courses .see-more {
+      position: absolute;
+      top: 250px;
+      right: 0;
+      color: #1EBFC1;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration-line: underline;
+      cursor: pointer;
+}
+
+
+.courses .items .img {
+      width: 359px;
+      height: 393px;
+      border-radius: 8px;
+      object-fit: cover;
+}
+
+.courses .items .item {
+      position: relative;
+}
+
+.courses .items .info {
+      position: absolute;
+      top: 322px;
+      left: 17px;
+      right: 17px;
+      padding: 18px 25px 29px;
+      border-radius: 8px;
+      background: #FFF;
+      box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.courses .items .mini-title {
+      color: #0D1111;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 26px;
+}
+
+.courses .items .cost {
+      color: #767E7E;
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+}
+
+.courses .items .cost b {
+      color: #0D1111;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: normal;
+}
+
+.courses .items .mini-desc {
+      color: #9DA6A5;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+}
+
+.courses .items .amount span {
+
+      color: #9DA6A5;
+      font-size: 1.4rem;
+}
+
+.courses .items .amount span::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 10px;
+      flex-shrink: 0;
+      background-color: #1EBFC1;
+      border-radius: 50%;
+      margin-bottom: 2px;
+}
+
+/************* para ****************/
+.para {
+      margin-top: 200px;
+      margin-bottom: 264px;
+}
+
+.para .content {
+      display: flex;
+      justify-content: space-between;
+      width: 826px;
+}
+
+.para .content .num {
+      text-align: center;
+}
+
+.para .content strong {
+      color: #0D1111;
+      font-size: 6.2rem;
+      font-weight: 700;
+      line-height: normal;
+}
+
+.para .content p {
+      color: #767E7E;
+      font-size: 1.8rem;
+      line-height: normal;
+}
+
+/************ about **************/
+.about .content {
+      position: relative;
+      margin-bottom: 130px;
+}
+
+.about .mark {
+      margin: 37px 0 26px;
+}
+
+.about .desc {
+      width: 419px;
+      color: #5D6564;
+      font-size: 3.2rem;
+      line-height: 1.5;
+      margin-bottom: 33px;
+}
+
+.about .author {
+      color: #767E7E;
+      font-size: 1.6rem;
+      line-height: normal;
+      margin-bottom: 52px;
+}
+
+.about .author strong {
+      color: #070707;
+      font-weight: 500;
+      line-height: normal;
+}
+
+.about .pre-next {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 27px;
+      margin-left: 30px;
+      font-size: 3rem;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      color: #FFF;
+      background: #2AC9BF;
+      border: 1px solid #2AC9BF;
+      cursor: pointer;
+}
+
+
+.about .pre-next:hover {
+      color: #2AC9BF;
+      background: #FFF;
+}
+
+.about .img {
+      position: absolute;
+      width: 235px;
+      height: 235px;
+      border-radius: 50%;
+      object-fit: cover;
+}
+
+.about .img:first-child {
+      top: 100px;
+      right: 150px;
+      background-color: #ff8282;
+}
+
+.about .img:nth-child(2) {
+      top: 19px;
+      right: 0;
+      width: 110px;
+      height: 110px;
+      background-color: #bf83ff;
+}
+
+.about .img:nth-child(3) {
+      top: 0;
+      right: 440px;
+      width: 92px;
+      height: 92px;
+      background-color: #1ebfc1;
+}
+
+.about .img:nth-child(4) {
+      top: 260px;
+      right: 600px;
+      width: 78px;
+      height: 78px;
+      background-color: #ffc147;
+}
+
+.about .img:nth-child(5) {
+      top: 400px;
+      right: 390px;
+      width: 78px;
+      height: 78px;
+      background-color: #ff947a;
+}
+
+.about .img:nth-child(6) {
+      top: 370px;
+      right: 32px;
+      width: 78px;
+      height: 78px;
+      background-color: #b1dfdc;
+}
+
+/*********** call ************/
+.call {
+      padding: 76px 0 88px;
+      background-color: #DEF6F5;
+}
+
+.call .content {
+      display: flex;
+      align-items: center;
+}
+
+.call .btn {
+      margin-left: auto;
+      margin-right: auto;
+}
+
+/*********** footer ************/
+.footer {
+      padding: 131px 0 50px;
+}
+
+.footer .row {
+      display: flex;
+      justify-content: space-between;
+}
+
+.footer .item-title {
+      color: #2E2E2E;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 25px;
+}
+
+.footer .item {
+      color: #535353;
+      font-size: 1.6rem;
+      line-height: normal;
+      margin-bottom: 20px;
+}
+
+.footer .copy {
+      margin: 80px;
+      text-align: center;
+      color: #B0B5B4;
+      font-size: 1.8rem;
+      line-height: normal;
+}
+
+.footer .social .item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+}
